@@ -1,0 +1,75 @@
+Create a complete hackathon submission package for "ESG Compliance Co-Pilot" in the EXACT format and structure of the provided SMYKM AI example. Generate all files with professional, investor-ready content.
+
+## PROJECT SPECIFICATIONS:
+
+**Project Name:** ESG Compliance Co-Pilot
+**Core Value:** AI-powered compliance assistant that automates ESG reporting
+**Tech Stack:** IBM watsonx Orchestrate + Streamlit + Python
+**Target Users:** Sustainability Managers, Compliance Officers, CFOs
+
+## EXACT OUTPUT STRUCTURE REQUIRED:
+
+Create these files with identical formatting:
+
+1. **README.md** - Main project documentation with:
+   - Center-aligned header with badges
+   - Problem statement with metric badges
+   - Demo video section with placeholder
+   - Before/After comparison table
+   - 4-agent architecture diagram and code blocks
+   - Real-world case study in YAML format
+   - Quick start instructions
+   - Technology stack table
+   - Performance metrics with ROI calculator
+   - Project structure tree
+   - Use cases table
+   - Advanced features with dropdowns
+   - Team and acknowledgments
+   - Call-to-action buttons
+
+2. **Project Files:**
+   - talks/hackathon/slides.md
+   - resources/leads/global-manufacturing.md
+   - resources/products/esg-software.md  
+   - resources/outreach/compliance-template.md
+   - docs/agent-flow.md
+   - assets/cover_art.svg (placeholder)
+   - LICENSE
+   - requirements.txt
+   - demo/app.py (Streamlit application)
+
+## CONTENT REQUIREMENTS:
+
+### Problem Statement:
+- 200+ hours monthly manual compliance work
+- 47% companies fail compliance audits
+- $2M+ average compliance fines
+- Complex regulations (CSRD, GRI, SEC)
+
+### Four AI Agents:
+1. **Data Hunter Agent** - Automated data collection
+2. **Regulation Decoder Agent** - Compliance analysis
+3. **Compliance Checker Agent** - Gap identification  
+4. **Report Drafting Agent** - Documentation generation
+
+### Performance Metrics:
+- 40x faster compliance (200hrs → 5min)
+- 95% accuracy vs 53% manual
+- $2M risk reduction
+- 95% risk mitigation
+
+### Real-World Case Study:
+Company: Global Manufacturing Corp
+Challenge: CSRD 2025 deadline, manual processes
+Solution: ESG Compliance Co-Pilot
+Result: Full compliance 4 months early, $1.8M risk mitigated
+
+## FORMATTING RULES:
+- Use identical markdown structure as SMYKM AI example
+- Include all badges, tables, code blocks, and visual elements
+- Maintain professional, investor-ready tone
+- Focus on business value and ROI
+- Show clear watsonx Orchestrate integration
+- Include actionable demo and installation steps
+
+Generate all files with complete, ready-to-submit content that follows the exact winning template pattern.
