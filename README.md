@@ -23,15 +23,6 @@
 
 </div>
 
-## 📹 Demo Video
-
-<div align="center">
-
-[![ESG Compliance Co-Pilot Demo](https://img.youtube.com/vi/placeholder-demo-video/maxresdefault.jpg)](https://www.youtube.com/watch?v=placeholder-demo-video)
-
-*Click to watch the 2-minute demo*
-
-</div>
 
 ## 🔄 Before vs After
 
@@ -286,22 +277,6 @@ Comprehensive APIs for integration with existing ERP, HR, and Finance systems, e
 ### Special Thanks
 - IBM watsonx team for platform support
 - ESG compliance experts for domain knowledge
-- Beta users from manufacturing sector for feedback
-
-## 🎉 Call to Action
-
-<div align="center">
-
-### Ready to transform your ESG compliance process?
-
-[![Deploy on Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://demo.streamlit.app)
-[![Deploy on IBM Cloud](https://bluemix.net/deploy/button.png)](https://cloud.ibm.com/deploy)
-
-### Have questions or want to contribute?
-
-[![GitHub Issues](https://img.shields.io/github/issues/your-org/esg-compliance-copilot)](https://github.com/your-org/esg-compliance-copilot/issues)
-[![GitHub Pull Requests](https://img.shields.io/github/issues-pr/your-org/esg-compliance-copilot)](https://github.com/your-org/esg-compliance-copilot/pulls)
-
-**Contact us at [team@esgcopilot.com](mailto:team@esgcopilot.com)**
+- Beta users from manufacturing sector
 
 </div>
