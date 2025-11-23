@@ -67,7 +67,12 @@ def main():
     
     # Sidebar
     with st.sidebar:
-        st.image("../assets/cover_art.svg", use_column_width=True)
+        # Display SVG as HTML to handle properly in Streamlit
+        st.markdown("""
+        <div style="text-align: center;">
+            <img src="https://raw.githubusercontent.com/harshith1118/ESG-Compliance-Co-Pilot/main/assets/cover_art.svg" width="100%">
+        </div>
+        """, unsafe_allow_html=True)
         st.header("Project Information")
         st.write("**Problem**: Manual ESG reporting takes 200+ hours/month")
         st.write("**Solution**: AI-powered automation with 40x speed improvement")
