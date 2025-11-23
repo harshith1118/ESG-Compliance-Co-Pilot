@@ -129,16 +129,62 @@ def upload_data_sources():
         st.subheader("Financial Data")
         finance_file = st.file_uploader("Finance Data (CSV/Excel)", type=['csv', 'xlsx'])
         other_files = st.file_uploader("Other Sources (multiple)", type=['csv', 'xlsx'], accept_multiple_files=True)
-    
-    if st.button("Process Data Sources", key="process_sources"):
-        if not any([erp_file, hris_file, finance_file, other_files]):
-            st.warning("Please upload at least one data file")
-            return
-            
+
+    # Add this right after your file uploader code
+    if erp_file or hris_file or finance_file or other_files:
+        st.success("✅ Files uploaded! Click 'Process with AI' to continue.")
+        if st.button("🚀 Process with AI Agents"):
+            st.balloons()
+            st.success("AI analysis complete! Showing results...")
+            # Add your analysis results here
+            # Simulate data processing
+            with st.spinner("Processing data sources with Data Hunter Agent..."):
+                time.sleep(2)
+
+                # Mock data collection
+                st.session_state.compliance_data['data_collection'] = {
+                    'erp_data': 1247,
+                    'hris_data': 856,
+                    'finance_data': 932,
+                    'other_data': 543,
+                    'total_records': 3578
+                }
+
+                st.session_state.compliance_data['data_gaps'] = [
+                    {'field': 'Scope 3 Emissions', 'source': 'Supply Chain', 'severity': 'High'},
+                    {'field': 'Water Usage', 'source': 'Facilities', 'severity': 'Medium'},
+                    {'field': 'Diversity Metrics', 'source': 'HR', 'severity': 'Low'}
+                ]
+
+            st.success("✅ Data sources processed successfully!")
+
+            # Display mock results
+            col1, col2 = st.columns(2)
+            with col1:
+                st.subheader("Collected Data Summary")
+                data_summary = st.session_state.compliance_data['data_collection']
+                st.write(f"ERP Records: {data_summary['erp_data']}")
+                st.write(f"HRIS Records: {data_summary['hris_data']}")
+                st.write(f"Finance Records: {data_summary['finance_data']}")
+                st.write(f"Other Records: {data_summary['other_data']}")
+                st.write(f"**Total Records: {data_summary['total_records']}**")
+
+            with col2:
+                st.subheader("Data Gaps Identified")
+                for gap in st.session_state.compliance_data['data_gaps']:
+                    st.warning(f"⚠️ {gap['field']} ({gap['severity']} priority) from {gap['source']}")
+
+            # Update the step after processing
+            st.session_state.current_step = 1
+    else:
+        st.warning("Please upload at least one data file")
+
+    # Keep the original process button for compatibility with the step-by-step flow
+    if st.button("Process Data Sources", key="process_sources") and (erp_file or hris_file or finance_file or other_files):
         # Simulate data processing
         with st.spinner("Processing data sources with Data Hunter Agent..."):
             time.sleep(2)
-            
+
             # Mock data collection
             st.session_state.compliance_data['data_collection'] = {
                 'erp_data': 1247,
@@ -147,16 +193,16 @@ def upload_data_sources():
                 'other_data': 543,
                 'total_records': 3578
             }
-            
+
             st.session_state.compliance_data['data_gaps'] = [
                 {'field': 'Scope 3 Emissions', 'source': 'Supply Chain', 'severity': 'High'},
                 {'field': 'Water Usage', 'source': 'Facilities', 'severity': 'Medium'},
                 {'field': 'Diversity Metrics', 'source': 'HR', 'severity': 'Low'}
             ]
-        
+
         st.success("✅ Data sources processed successfully!")
         st.session_state.current_step = 1
-        
+
         # Display mock results
         col1, col2 = st.columns(2)
         with col1:
@@ -167,7 +213,7 @@ def upload_data_sources():
             st.write(f"Finance Records: {data_summary['finance_data']}")
             st.write(f"Other Records: {data_summary['other_data']}")
             st.write(f"**Total Records: {data_summary['total_records']}**")
-        
+
         with col2:
             st.subheader("Data Gaps Identified")
             for gap in st.session_state.compliance_data['data_gaps']:
